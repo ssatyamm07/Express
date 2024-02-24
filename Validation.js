@@ -8,7 +8,7 @@ app.post("/health-checkup", function(req, res){
     const kidneyLength = kidneys.length;
 
     res.send({
-        msg: "your kidney length is " +kidneyLength 
+        msg: "your kidney length is " 
     });
 
    
