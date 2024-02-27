@@ -22,7 +22,7 @@ app.post("/health-checkup", function(req, res){
     const response = schema.safeParse(kidneys)
     if(!response.success){
         res.status(401).json({
-            msg: "Invalid input"
+            err: "Invalid input"
         });
         return;
     }
