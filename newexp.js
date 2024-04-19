@@ -30,7 +30,7 @@ app.get("/", function(req, res) {
 
 app.post("/", function(req, res){
     const isHealthy = req.body.isHealthy;
-        if (isHealthy === undefined || typeof isHealthy !== 'boolean') {
+    if (isHealthy === undefined || typeof isHealthy !== 'boolean') {
         return res.status(400).json({error: "isHealthy pty is missing"});
     }
     users[0].kidneys.push({
